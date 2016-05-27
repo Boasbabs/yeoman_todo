@@ -9,17 +9,12 @@
  */
 angular.module('yeomanTodoApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.todos = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma',
-      'Ruby on Rails'
-    ];
+    $scope.todos = [];
     $scope.addTodo = function () {
     	$scope.todos.push($scope.todo);
-    	$scope.todo = "";
+    	$scope.todo = '';
     };
     $scope.removeTodo = function(index) {
     	$scope.todos.splice(index, 1);
-    }
+    };
   });

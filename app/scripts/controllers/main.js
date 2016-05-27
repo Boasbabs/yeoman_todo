@@ -15,4 +15,8 @@ angular.module('yeomanTodoApp')
       'Karma',
       'Ruby on Rails'
     ];
+    $scope.addTodo = function () {
+    	$scope.todos.push($scope.todo);
+    	$scope.todo = "";
+    };
   });

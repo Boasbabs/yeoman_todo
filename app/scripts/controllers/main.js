@@ -9,9 +9,10 @@
  */
 angular.module('yeomanTodoApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
+    $scope.todos = [
       'HTML5 Boilerplate',
       'AngularJS',
-      'Karma'
+      'Karma',
+      'Ruby on Rails'
     ];
   });

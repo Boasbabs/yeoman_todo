@@ -17,5 +17,8 @@
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "yeomanTodoApp"
+  "moduleName": "yeomanTodoApp",
+  "resolutions": {
+    "angular": "1.5.6"
+  }
 }

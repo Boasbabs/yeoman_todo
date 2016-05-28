@@ -2,13 +2,17 @@
   <h2>My Todos</h2>
 
 <!--   Todos input-->
-  <form role="form" ng-submit="addTodo()">
+  <form role="form" ng-submit="addTodo()" name="myForm">
     <div class="row">
       <div class="input-group">
-        <input type="text" ng-model="todo" placeholder="What task do you want to add?" class="form-control">
+        <input type="text" ng-model="todo" name="myField" placeholder="What task do you want to add?" class="form-control" required minlength="3">
         <span class="input-group-btn">
           <input type="submit" class="btn btn-primary" value="Add">
         </span>
+      </div>
+      <div ng-messages="myForm.myField.$error">
+        <div class="alert alert-warning" ng-message="required">Please note you have not enter a task!</div>
+        <div class="alert alert-danger" ng-message="minlength">The name is too short</div>
       </div>
     </div>
   </form>
